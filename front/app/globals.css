@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --font-display-stack: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+  --font-mono-stack: "SFMono-Regular", "Menlo", "Consolas", monospace;
+  --background: #f4efe2;
+  --background-strong: #e6dcc5;
+  --surface: rgba(255, 250, 239, 0.78);
+  --surface-strong: rgba(255, 248, 232, 0.96);
+  --foreground: #221d18;
+  --muted: #6d6255;
+  --accent: #14532d;
+  --accent-soft: #d7e7d8;
+  --border: rgba(34, 29, 24, 0.1);
+  --shadow: 0 24px 80px rgba(58, 44, 21, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-display-stack);
+  --font-mono: var(--font-mono-stack);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(20, 83, 45, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(150, 111, 51, 0.15), transparent 34%),
+    linear-gradient(180deg, var(--background) 0%, #f9f5ea 54%, #f1e9d7 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-display-stack);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(20, 83, 45, 0.16);
+}
