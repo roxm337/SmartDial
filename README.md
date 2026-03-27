@@ -1,8 +1,8 @@
-# ArteFact Retell AI Calling MVP
+#  Retell AI Calling MVP
 
 Production-ready MVP for outbound AI calling with Retell AI.
 
-This project gives ArteFact a simple full-stack workflow to:
+This project gives  a simple full-stack workflow to:
 
 - create Retell voice agents from plain scripts
 - launch outbound calling campaigns from lead lists
@@ -19,7 +19,7 @@ This project gives ArteFact a simple full-stack workflow to:
 
 ```mermaid
 flowchart LR
-    A[User opens ArteFact dashboard] --> B[Create AI agent from script]
+    A[User opens  dashboard] --> B[Create AI agent from script]
     B --> C[FastAPI creates Retell LLM]
     C --> D[FastAPI creates and publishes Retell agent]
     D --> E[Agent stored in SQLite]
@@ -158,8 +158,8 @@ Request:
 
 ```json
 {
-  "name": "ArteFact SDR",
-  "script": "You are calling on behalf of ArteFact..."
+  "name": " SDR",
+  "script": "You are calling on behalf of ..."
 }
 ```
 
